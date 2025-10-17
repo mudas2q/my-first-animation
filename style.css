@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 4rem auto;
+    height: 85vh;
+    width: 80vw;
+    background: linear-gradient(90deg, rgb(255, 214, 143) 1%, rgb(255, 151, 151) 50%, rgb(221, 152, 255) 100%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 0, 255, 0.2), 0 0 30px rgba(0, 0, 255, 0.2);
+    border-radius: 35px;
+
+}
+
+.ball img {
+    width: 10%;
+    height: 17vh;
+    position: absolute;
+    animation: animateY 0.8s ease-in infinite alternate, animateX 2s linear infinite alternate;
+
+}
+
+/*
+
+@keyframes bounce {
+    0% {
+        bottom: 70%;
+        left: 0;
+    }
+
+    20% {
+        bottom: 0;
+        left: 10%;
+    }
+
+    30% {
+        bottom: 70%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 0;
+        left: 40%;
+    }
+
+    65% {
+        bottom: 70%;
+        left: 60%;
+    }
+
+    80% {
+        bottom: 0;
+        left: 80%;
+    }
+
+    100% {
+        bottom: 70%;
+        left: 100%;
+    }
+}
+     */
+
+@keyframes animateY {
+    from {
+        bottom: 82%;
+    }
+
+    to {
+        bottom: 0%;
+        width: 13%;
+        height: 17vh;
+    }
+}
+
+@keyframes animateX {
+    from {
+        left: 0%;
+    }
+
+
+    to {
+        left: 90%;
+    }
+}
